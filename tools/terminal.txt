@@ -1,0 +1,5 @@
+nushell
+homebrew
+zoxide
+fzf
+tmux
