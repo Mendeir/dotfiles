@@ -1,2 +1,5 @@
 theme = Catppuccin Mocha
 maximize = true
+command = /home/linuxbrew/.linuxbrew/bin/nu
+font-size = 14
+font-feature = -liga
