@@ -18,3 +18,5 @@
 # them for future reference.
 
 zoxide init nushell | save -f ~/.zoxide.nu
+
+$env.PATH = ($env.PATH | append ~/.local/bin)
