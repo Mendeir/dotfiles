@@ -5,10 +5,5 @@ return {
             typescript = { "prettier" },
             typescriptreact = { "prettier" },
         },
-        formatters = {
-            prettier = {
-                prepend_args = { "--tab-width", "4" },
-            },
-        },
     },
 }
