@@ -20,3 +20,9 @@
 zoxide init nushell | save -f ~/.zoxide.nu
 
 $env.PATH = ($env.PATH | append ~/.local/bin)
+$env.PATH = ($env.PATH | append ~/.claude/local)
+# Add SDKMAN Java to PATH
+$env.PATH = ($env.PATH | split row (char esep) | prepend $"($env.HOME)/.sdkman/candidates/java/current/bin")
+
+# Set JAVA_HOME
+$env.JAVA_HOME = $"($env.HOME)/.sdkman/candidates/java/current"

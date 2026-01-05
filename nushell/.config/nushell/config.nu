@@ -68,3 +68,8 @@ $env.PYENV_ROOT = "~/.pyenv" | path expand
 if (( $"($env.PYENV_ROOT)/bin" | path type ) == "dir") {
   $env.PATH = $env.PATH | prepend $"($env.PYENV_ROOT)/bin" }
 $env.PATH = $env.PATH | prepend $"(pyenv root)/shims"
+
+# SDKMAN wrapper for Nushell
+def sdk [...args] {
+    bash -c $"source ~/.sdkman/bin/sdkman-init.sh && sdk ($args | str join ' ')"
+}
