@@ -1,0 +1,11 @@
+# Syntax highlighting
+zsh-users/zsh-syntax-highlighting
+
+# Auto-suggestions
+zsh-users/zsh-autosuggestions
+
+# Completions
+zsh-users/zsh-completions
+
+# fzf tab completion
+Aloxaf/fzf-tab
